@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/unchangingConstant/studenttracker-schemas/schemas/unixTime",
+  "title": "UnixTime",
+  "description": "The number of seconds since the Unix epoch",
+  "type": "integer",
+  "minimum": 0
+}
+

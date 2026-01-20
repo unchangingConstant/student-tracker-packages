@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/unchangingConstant/studenttracker-schemas/schemas/studentId",
+  "title": "StudentId",
+  "description": "The unique identifier for a student",
+  "type": "integer",
+  "minimum": 1
+}
+

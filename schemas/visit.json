@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/unchangingConstant/studenttracker-schemas/schemas/visit",
+  "title": "Visit",
+  "description": "Represents a span of time which a given student has spent at the Kumon center",
+  "type": "object",
+  "properties": {
+    "visitId": {
+      "description": "The unique identifier for a visit",
+      "type": "integer",
+      "minimum": 1
+    },
+    "studentId": {
+      "description": "The studentId of the student this visit belongs to",
+      "$ref": "/schemas/studentId"    
+    },
+    "startTime": {
+      "description": "The time that this visit started",
+      "$ref": "/schemas/unixTime"
+    },
+    "duration": {
+      "description": "How long this visit was in minutes",
+      "type": "integer",
+      "exclusiveMinimum": 0
+    }
+  }
+}
+
